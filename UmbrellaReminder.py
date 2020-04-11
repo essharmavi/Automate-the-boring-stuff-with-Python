@@ -17,7 +17,7 @@ if weather == 'Raining' or weather == 'Overcast':
     print(server.ehlo())
     print(server.starttls())
 
-    server.login('awish4alll@gmail.com', 'cqtzjhqeqafahmvs')
+    server.login('abc@gmail.com', 'cqafahmvs')
 
     subject = "Umbrella Reminder"
     body = f"Take an umbrella with you. Weather condition for today is {weather} and temperature is {temperature} in New York."
@@ -25,7 +25,7 @@ if weather == 'Raining' or weather == 'Overcast':
     msg = f"Subject:{subject}\n\n{body}\n\nRegards,\nVishal".encode('utf-8')
     print(msg)
 
-    server.sendmail('awish4alll@gmail.com', 'vishal.sharma5181@gmail.com', msg)
+    server.sendmail('abc@gmail.com', 'xyz@gmail.com', msg)
 
     print("Email Sent!")
 

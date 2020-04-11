@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 class TwitterBot():
     def __init__(self,username,password):
-        self.browser=webdriver.Chrome("/Users/vishalsharma/Downloads/chromedriver")
+        self.browser=webdriver.Chrome("/chromedriver")
         self.username=username
         self.password=password
 
@@ -36,10 +36,8 @@ class TwitterBot():
 
 
 if __name__=="__main__":
-    username='essharmav'
-        #input("Enter your username: ")
-    password= 'Leome$$i10'
-        #input("Enter your password: ")
+    username=input("Enter your username: ")
+    password=input("Enter your password: ")
     t=TwitterBot(username,password)
     t.signIn()
     #t.FollowSomeone('trumpdssssaf')
